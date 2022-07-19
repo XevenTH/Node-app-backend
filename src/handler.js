@@ -87,7 +87,7 @@ const editNoteByIdHandler = (request, h) => {
 
         const response = h.response({
             status: 'succes',
-            message: 'Catatan Berhasil Ditambahkan',
+            message: 'Catatan Berhasil Diubah',
         });
 
         response.code(201);
@@ -96,7 +96,7 @@ const editNoteByIdHandler = (request, h) => {
 
     const response = h.response({
         status: 'fail',
-        message: 'Catatan Gagal Ditambahkan'
+        message: 'Catatan Gagal Diubah'
     });
     response.code(500);
     return response;
@@ -112,7 +112,7 @@ const deleteNoteByIdHandler = (request, h) => {
         notes.splice(index, 1);
         const response = h.response({
             status: 'succes',
-            message: 'Catatan Berhasil Ditambahkan',
+            message: 'Catatan Berhasil Dihapus',
         });
 
         response.code(201);
@@ -121,7 +121,7 @@ const deleteNoteByIdHandler = (request, h) => {
 
     const response = h.response({
         status: 'fail',
-        message: 'Catatan Gagal Ditambahkan'
+        message: 'Catatan Gagal Dihapus'
     });
     response.code(500);
     return response;
