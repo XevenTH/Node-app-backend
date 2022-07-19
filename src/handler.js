@@ -90,7 +90,7 @@ const editNoteByIdHandler = (request, h) => {
             message: 'Catatan Berhasil Diubah',
         });
 
-        response.code(201);
+        response.code(200);
         return response;
     };
 
@@ -98,7 +98,7 @@ const editNoteByIdHandler = (request, h) => {
         status: 'fail',
         message: 'Catatan Gagal Diubah'
     });
-    response.code(500);
+    response.code(404);
     return response;
 };
 
@@ -115,7 +115,7 @@ const deleteNoteByIdHandler = (request, h) => {
             message: 'Catatan Berhasil Dihapus',
         });
 
-        response.code(201);
+        response.code(200);
         return response;
     };
 
@@ -123,7 +123,7 @@ const deleteNoteByIdHandler = (request, h) => {
         status: 'fail',
         message: 'Catatan Gagal Dihapus'
     });
-    response.code(500);
+    response.code(404);
     return response;
 };
 
