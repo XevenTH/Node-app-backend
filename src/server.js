@@ -18,6 +18,7 @@ const init = async () => {
     console.log(`Server Sedang Berjalan Di ${server.info.uri}`)
 };
 
+//test commit
 init();
 
 /*
